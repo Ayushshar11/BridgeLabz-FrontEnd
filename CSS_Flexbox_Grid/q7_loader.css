@@ -1,0 +1,14 @@
+/* Q7 - CSS loading animation (three dots) centered with flexbox */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{height:100vh;display:flex;align-items:center;justify-content:center;background:#f7fafc;font-family:Inter, Arial, sans-serif;}
+.loader{display:flex;gap:0.8rem;align-items:flex-end;height:60px;}
+.dot{width:16px;height:16px;border-radius:50%;background:#0b3d91;animation:updown 0.8s ease-in-out infinite;}
+.d1{animation-delay:0s;}
+.d2{animation-delay:0.12s;}
+.d3{animation-delay:0.24s;}
+
+@keyframes updown{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-16px);}
+  100%{transform:translateY(0);}
+}
