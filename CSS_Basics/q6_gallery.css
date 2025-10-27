@@ -1,0 +1,17 @@
+/* Q6: CSS-only responsive gallery */
+/* grid layout with responsive columns */
+body{font-family:Arial, Helvetica, sans-serif;background:#eef2f6;margin:0;padding:2rem;}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1200px;margin:0 auto;}
+.photo{position:relative;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(12,18,30,0.08);}
+.photo img{width:100%;height:100%;display:block;transition:transform .35s ease;}
+.photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:0.8rem;opacity:0;transform:translateY(10px);transition:opacity .25s ease, transform .25s ease;background:rgba(0,0,0,0.45);color:white;text-align:center;}
+.photo:hover img{transform:scale(1.08);}
+.photo:hover figcaption{opacity:1;transform:translateY(0);}
+
+/* responsive adjustments */
+@media (max-width:900px){
+  .gallery{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:600px){
+  .gallery{grid-template-columns:1fr;}
+}

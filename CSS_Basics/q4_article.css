@@ -1,0 +1,18 @@
+/* Q4: Long article styling */
+/* Basic typography and spacing */
+body{font-family: 'Georgia', serif; background:#fffefc;padding:2rem;}
+.article{max-width:900px;margin:0 auto;}
+.article header h1{font-size:2rem;margin-bottom:0.2rem;}
+.article .meta{color:#6b7280;margin-bottom:1rem;}
+.content p{margin:1rem 0; text-align:justify;}
+
+/* Make first letter larger using ::first-letter and first line bold */
+.content p::first-letter{font-size:2.5rem; font-weight:700; float:left; line-height:1; padding-right:0.15rem;}
+.content p::first-line{font-weight:700;}
+
+/* style for mark */
+mark{background:#fffbcc;padding:0.1rem 0.15rem;border-radius:3px;}
+
+/* blockquote emphasis */
+blockquote{border-left:6px solid #c8b4ff;background:#f6f2ff;padding:1rem 1.2rem;margin:1rem 0;border-radius:6px;}
+blockquote p{margin:0;font-style:italic;}

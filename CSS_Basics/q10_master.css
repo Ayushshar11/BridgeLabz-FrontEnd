@@ -1,0 +1,32 @@
+/* Q10: Box model and positioning mastery */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Inter, Arial, sans-serif;background:linear-gradient(180deg, #f7fafc, #eef2f7);color:#0f172a;}
+
+/* sticky header */
+.main-header{position:sticky;top:0;background:rgba(11,61,145,0.95);padding:0.8rem 1rem;}
+.nav{display:flex;gap:1rem;justify-content:flex-end;}
+.nav a{color:white;text-decoration:none;padding:0.4rem 0.6rem;border-radius:6px;}
+
+/* hero with background image and centered text using relative + absolute */
+.hero{height:50vh;background-image:url('https://picsum.photos/1600/900?9');background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center;}
+.hero-text{background:rgba(0,0,0,0.45);color:white;padding:1.2rem 1.6rem;border-radius:8px;}
+
+/* about section two columns using grid */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;padding:2rem;align-items:center;}
+.about-image img{width:100%;border-radius:8px;}
+
+/* services: three boxes */
+.services{display:flex;gap:1rem;padding:1rem 2rem;}
+.service{flex:1;padding:1.2rem;background:white;border-radius:8px;box-shadow:0 6px 18px rgba(12,18,30,0.06);text-align:center;}
+
+/* contact with relative positioning and outline */
+.contact{padding:2rem;display:flex;justify-content:center;}
+.contact form{display:flex;flex-direction:column;gap:0.8rem;width:100%;max-width:420px;background:white;padding:1rem;border-radius:8px;box-shadow:0 8px 24px rgba(12,18,30,0.06);outline:3px solid rgba(11,61,145,0.04);}
+
+/* use margin, padding, border, outline, relative/absolute/fixed demonstrated above */
+
+/* responsive */
+@media (max-width:800px){
+  .about{grid-template-columns:1fr;}
+  .services{flex-direction:column;}
+}

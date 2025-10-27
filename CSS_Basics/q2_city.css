@@ -1,0 +1,30 @@
+/* Q2: Multi-section informational page */
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia, "Times New Roman", serif; line-height:1.6; background:#f0f3f7;}
+header.top{position:sticky; top:0; background:#243b55; color:white; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center;}
+header.top nav a{margin-left:1rem;color:#dbe7ff;text-decoration:none;}
+
+/* Each .full section spans full width and has distinct backgrounds */
+.full{min-height:50vh; padding:3rem 2rem; display:flex; align-items:center;}
+.hero{background-image:url('https://picsum.photos/1600/900?blur=2'); background-size:cover; background-position:center; color:white; justify-content:flex-start;}
+.gradient{background:linear-gradient(120deg,#fdf6e3,#ffd1aa); color:#2b2b2b;}
+.radial{background:radial-gradient(circle at 20% 30%, #cfe9ff, #8fbfe0 40%, #578ab0);}
+.parallax{
+  background-image:url('https://picsum.photos/1400/900?grayscale');
+  background-size:cover;
+  background-attachment:fixed; /* parallax-like */
+  color:white;
+}
+
+/* spacing with margins and borders */
+section h3{font-size:2rem;margin-bottom:0.5rem;border-bottom:3px solid rgba(0,0,0,0.06);padding-bottom:0.5rem;}
+main section p{max-width:900px; margin-top:1rem; background:rgba(255,255,255,0.6); padding:1rem; border-radius:6px;}
+
+/* headings use different sizes and weights */
+h1{font-size:2rem;font-weight:800;}
+h2{font-size:1.8rem;font-weight:700;}
+h3{font-weight:700;}
+
+/* footer */
+footer{padding:1rem;text-align:center;background:#172635;color:#cfe9ff;}

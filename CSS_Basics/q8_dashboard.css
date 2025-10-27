@@ -1,0 +1,16 @@
+/* Q8: Dashboard layout with fixed header and sidebar */
+*{box-sizing:border-box;}
+body{margin:0;font-family:Inter, Arial, sans-serif;background:#f4f7fb;}
+.dash-header{position:fixed;top:0;left:0;right:0;height:64px;background:#0b3d91;color:white;display:flex;align-items:center;padding:0 1rem;z-index:50;}
+.dash{display:flex;gap:1rem;padding-top:80px;min-height:100vh;}
+.sidebar{width:220px;position:sticky;top:80px;height:calc(100vh - 80px);background:white;padding:1rem;border-right:1px solid #eef3fb;}
+
+/* main content area */
+.content{flex:1;padding:1.5rem;display:flex;flex-direction:column;gap:1rem;}
+.box{background:white;padding:1.2rem;border-radius:10px;box-shadow:0 6px 18px rgba(12,18,30,0.06);}
+
+/* on smaller screens stack sidebar above content */
+@media (max-width:800px){
+  .dash{flex-direction:column;}
+  .sidebar{width:100%;height:auto;position:relative;top:0;border-right:none;border-bottom:1px solid #eef3fb;}
+}
