@@ -1,0 +1,13 @@
+/* Question 2 CSS - Tooltip demo */
+*{box-sizing:border-box;}
+body{font-family:Arial,Helvetica,sans-serif; margin:0; height:100vh; display:flex; align-items:center; justify-content:center;}
+.center{text-align:center;}
+.items{display:flex; gap:2rem; align-items:center; justify-content:center;}
+.item{position:relative; font-size:2.2rem; padding:1rem; cursor:default;}
+/* Tooltip hidden by default */
+.tooltip{position:absolute; left:50%; transform:translateX(-50%) translateY(6px); bottom:100%; white-space:nowrap;
+         padding:0.45rem 0.6rem; border-radius:6px; background:rgba(0,0,0,0.85); color:white; font-size:0.85rem;
+         opacity:0; pointer-events:none; transition:opacity 0.3s ease-in-out, transform 0.3s ease-in-out;}
+/* Show tooltip on hover */
+.item:hover .tooltip,
+.item:focus-within .tooltip{ opacity:1; transform:translateX(-50%) translateY(-8px); }

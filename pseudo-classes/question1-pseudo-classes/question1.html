@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Question 1 — Pseudo-Classes</title>
+  <link rel="stylesheet" href="question1.css">
+</head>
+<body>
+  <header><h1>Pseudo-Classes Demo</h1></header>
+  <main class="row">
+    <section class="card">
+      <h2><code>:hover</code> — Links</h2>
+      <p>Hover the links to see background &amp; color change.</p>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+    <section class="card">
+      <h2><code>:focus</code> — Buttons</h2>
+      <p>Tab to the button to observe focus styles.</p>
+      <button>Submit</button>
+      <button>Cancel</button>
+    </section>
+    <section class="card">
+      <h2><code>:active</code> — Button press</h2>
+      <p>Press (click) the button to see active state.</p>
+      <button class="active-btn">Press me</button>
+    </section>
+    <section class="card">
+      <h2><code>:nth-child()</code> — List</h2>
+      <p>Every 2nd list item has a different style.</p>
+      <ul class="demo-list">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <li>Item four</li>
+        <li>Item five</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

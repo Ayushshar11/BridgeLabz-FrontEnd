@@ -1,0 +1,12 @@
+/* Question 6 CSS - Animations with keyframes */
+*{box-sizing:border-box;}
+body{min-height:100vh; margin:0; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:1.2rem; font-family:system-ui;}
+.box{width:120px; height:40px; background:#10b981; border-radius:6px; animation:slide 2s ease-in-out infinite alternate;}
+@keyframes slide{from{transform:translateX(-20px)} to{transform:translateX(20px)} }
+.ball{width:36px; height:36px; border-radius:50%; background:#ef4444; animation:bounce 1s cubic-bezier(.28,.84,.42,1) infinite;}
+@keyframes bounce{0%{transform:translateY(0)} 50%{transform:translateY(-40px)} 100%{transform:translateY(0)}}
+.colorful{animation:colorShift 3s ease-in-out infinite; animation-direction:alternate;}
+@keyframes colorShift{from{color:#111} to{color:#7c3aed}}
+/* delays and counts */
+.ball{animation-delay:0.2s; animation-iteration-count:infinite;}
+.box{animation-iteration-count:infinite;}

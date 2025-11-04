@@ -1,0 +1,7 @@
+/* Question 8 CSS - Box-sizing comparison */
+.compare{display:flex; gap:1rem; align-items:flex-start; padding:2rem; justify-content:center; flex-wrap:wrap;}
+.box{width:300px; padding:2rem; border-radius:8px; color:white; text-align:center;}
+.default{background:#ef4444;}
+.border-box{background:#6366f1; box-sizing:border-box;}
+/* default box uses content-box implicitly */
+@media (max-width:600px){ .compare{flex-direction:column; align-items:center;} }

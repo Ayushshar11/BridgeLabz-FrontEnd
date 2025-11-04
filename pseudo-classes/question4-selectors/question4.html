@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Question4 - Selectors</title>
+<link rel="stylesheet" href="question4.css"></head>
+<body>
+  <header><h1>CSS Selectors Practice</h1></header>
+  <main>
+    <section>
+      <h2>Element selector</h2>
+      <p>This paragraph shows an element selector (p).</p>
+    </section>
+    <section>
+      <h2>Class and ID</h2>
+      <p class="highlight">Paragraph with class <code>.highlight</code>.</p>
+      <p id="unique">Paragraph with id <code>#unique</code>.</p>
+    </section>
+    <section>
+      <h2>Attribute selector</h2>
+      <a href="#" data-type="external">External link (uses attribute selector)</a>
+    </section>
+    <section>
+      <h2>Combinators</h2>
+      <div class="wrap"><p>Parent &gt; Child example:<span>child</span></p></div>
+      <p>Adjacent + sibling</p><p class="adj">This is adjacent sibling styled by + combinator.</p>
+      <div>General ~ sibling</div><p class="gen">Styled by ~ combinator</p>
+    </section>
+  </main>
+  <footer>Footer - selectors demo</footer>
+</body>
+</html>

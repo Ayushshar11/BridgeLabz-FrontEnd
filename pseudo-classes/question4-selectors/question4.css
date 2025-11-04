@@ -1,0 +1,16 @@
+/* Question 4 CSS - Selector types explained */
+/* Element selector (targets all p tags) */
+p{line-height:1.5;}
+/* Class selector */
+.highlight{background:#fffbeb; padding:0.4rem; border-left:4px solid #f59e0b;}
+/* ID selector */
+#unique{font-weight:700; color:#0f172a;}
+/* Attribute selector - selects elements with data-type="external" */
+a[data-type="external"]{color:#0369a1; text-decoration:underline;}
+/* Child combinator: .wrap > p */
+.wrap > p{font-style:italic;}
+/* Adjacent sibling: previous + .adj */
+p + .adj{background:#eef2ff; padding:0.3rem;}
+/* General sibling: previous ~ .gen */
+div ~ .gen{border:1px dashed #c7d2fe; padding:0.4rem;}
+footer{margin-top:2rem; color:#374151;}

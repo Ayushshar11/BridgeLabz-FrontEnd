@@ -1,0 +1,7 @@
+/* Question 9 CSS - Combine pseudo-classes, transitions, transforms */
+body{display:flex; min-height:100vh; align-items:center; justify-content:center; font-family:system-ui; margin:0;}
+.examples{display:flex; gap:1rem;}
+.ex{padding:0.6rem 1rem; border-radius:10px; border:none; background:#0ea5a4; color:white; box-shadow:0 8px 24px rgba(14,165,164,0.12); transition:transform 220ms ease, background 220ms ease, box-shadow 220ms ease;}
+.ex:hover{transform:scale(1.06); background:#0891b2; box-shadow:0 16px 40px rgba(8,145,178,0.14);}
+.ex:active{transform:scale(0.98);}
+.ex:focus{outline:3px solid rgba(14,165,164,0.18); outline-offset:3px;}
