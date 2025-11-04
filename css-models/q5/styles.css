@@ -1,0 +1,21 @@
+/* Q5 - Advanced Selectors */
+/* attribute selector: targets input[type="text"] */
+input[type="text"]{border:2px dashed #888;padding:8px;margin:8px 0;display:block}
+
+/* starts-with selector: links that begin with https */
+a[href^="https"]{color:green;text-decoration:underline}
+
+/* pseudo-classes */
+.items li:nth-child(3){font-weight:700;color:#2b2bff} /* nth-child */
+.items li:hover{background:#eef;padding-left:8px} /* :hover */
+
+/* pseudo-elements */
+.items li::before{content:"• ";color:#f45d4c} /* ::before */
+
+/* combinators */
+/* direct child selector */
+.combinators > .child{margin-top:8px;padding:8px;border-left:4px solid #ccc}
+/* adjacent sibling selector */
+.combinators div + p.sibling{color:#333}
+/* general sibling selector - selects later siblings */
+.combinators p.another ~ p.later{font-style:italic;color:#555}

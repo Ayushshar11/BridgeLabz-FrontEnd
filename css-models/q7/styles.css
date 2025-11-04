@@ -1,0 +1,17 @@
+/* Q7 - Typography */
+/* Overall layout */
+body{font-family:Georgia,serif;margin:0;background:#fff;color:#222;padding:24px}
+.article{max-width:700px;margin:0 auto}
+
+/* font weights and sizes */
+h1{font-family: 'Segoe UI', Tahoma, sans-serif;font-size:2rem;margin-bottom:0.5rem;text-align:center}
+p{font-size:1rem;line-height:1.65;letter-spacing:0.2px}
+
+/* style inline elements */
+mark{background:#fff3b0;color:#7a4a00;padding:0 3px}
+strong{color:#1b1b1b}
+em{color:#5a5a5a}
+
+/* ::first-letter and ::first-line */
+.styled::first-letter{font-size:2.4rem;font-weight:700;float:left;margin-right:8px}
+.styled::first-line{letter-spacing:1px;text-transform:uppercase}

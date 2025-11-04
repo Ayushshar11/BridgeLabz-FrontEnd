@@ -1,0 +1,16 @@
+/* Q2 - Height & Width */
+/* Center all boxes vertically + horizontally using Flexbox */
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#fafafa;min-height:100vh;display:flex;flex-direction:column}
+header,footer{text-align:center;padding:12px;background:#fff;border-bottom:1px solid #eee}
+.wrap{flex:1;display:flex;gap:20px;align-items:center;justify-content:center;padding:24px;flex-wrap:wrap}
+
+/* box with px sizes */
+.box{padding:12px;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;box-sizing:border-box}
+.a{width:200px;height:150px;background:#00796b}
+
+/* box with % and vh */
+.b{width:50%;max-width:360px;height:25vh;background:#5e35b1}
+
+/* box using em and overflow demonstration */
+.c{width:20em;min-height:80px;max-width:280px;background:#f4511e;overflow:auto;padding:18px}
+.c::after{content:"\A This box has overflow:auto; add more text to see scrolling.";white-space:pre-wrap;color:rgba(255,255,255,0.9);font-size:0.9rem}

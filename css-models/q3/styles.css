@@ -1,0 +1,16 @@
+/* Q3 - Gradients and fixed header/footer */
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif}
+.fixed{position:fixed;left:0;right:0;background:#111;color:#fff;padding:12px;text-align:center;z-index:10}
+header{top:0}
+footer{bottom:0}
+main{padding-top:60px;padding-bottom:60px}
+
+/* linear gradient section */
+.linear{min-height:45vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#ff9a9e 0%,#fecfef 50%,#f6d365 100%);color:#222;padding:40px}
+
+/* radial gradient section with background-attachment fixed for parallax-like effect */
+.radial{min-height:55vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 20% 20%, #a18cd1, #fbc2eb 40%, #f6d365 100%);
+  background-attachment: fixed;color:#222;padding:40px}

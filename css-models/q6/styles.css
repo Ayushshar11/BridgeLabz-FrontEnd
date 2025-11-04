@@ -1,0 +1,12 @@
+/* Q6 - transformations */
+/* arrange horizontally using flexbox */
+body{font-family:Tahoma,Arial,Helvetica,sans-serif;margin:0;display:flex;flex-direction:column;min-height:100vh}
+.transforms{display:flex;gap:18px;justify-content:center;align-items:center;padding:36px;flex-wrap:wrap}
+.tile{width:140px;height:140px;border-radius:8px;background:#ddd;display:flex;align-items:center;justify-content:center;transition:all 0.4s ease;position:relative}
+.tile .label{position:absolute;bottom:-26px;font-size:0.95rem}
+
+/* hover transformations */
+.rotate:hover{transform:rotate(12deg)}
+.scale:hover{transform:scale(1.12)}
+.translate:hover{transform:translateX(18px) translateY(-8px)}
+.skew:hover{transform:skewX(12deg) skewY(4deg)}
