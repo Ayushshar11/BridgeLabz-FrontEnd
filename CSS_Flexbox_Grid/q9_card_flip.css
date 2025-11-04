@@ -1,9 +1,0 @@
-/* Q9 - 3D card flip centered with flexbox */
-*{box-sizing:border-box;margin:0;padding:0;}
-body{height:100vh;display:flex;align-items:center;justify-content:center;background:#f7fafc;font-family:Inter, Arial, sans-serif;}
-.stage{perspective:1000px;}
-.card{width:280px;height:200px;position:relative;transform-style:preserve-3d;transition:transform .7s ease;cursor:pointer;}
-.card:hover{transform:rotateY(180deg);}
-.face{position:absolute;inset:0;border-radius:8px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;background:white;box-shadow:0 6px 18px rgba(12,18,40,0.06);padding:1rem;}
-.back{transform:rotateY(180deg);padding:1rem;}
-.front img{max-width:100%;border-radius:6px;}
