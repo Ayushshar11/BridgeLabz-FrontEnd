@@ -1,0 +1,4 @@
+/* q8.css -- Pricing cards and hover effects */
+.card { transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover { transform: translateY(-6px); }
+.popular { border: 2px solid rgba(255,255,255,0.12); }

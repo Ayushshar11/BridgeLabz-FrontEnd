@@ -1,0 +1,4 @@
+/* q1.css -- Company Landing Page styles */
+/* Use container + row + col via Bootstrap grid for layout */
+body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+header .navbar-brand { letter-spacing: 0.5px; }
