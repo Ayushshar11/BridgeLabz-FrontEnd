@@ -1,0 +1,39 @@
+body {
+    display: flex; /* Use flexbox to center the board */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;       /* Make sure body takes full viewport height */
+    margin: 0;
+    background-color: #f0f0f0; /* A light background */
+}
+
+.chessboard {
+    display: flex;         /* Make the chessboard a flex container */
+    flex-direction: column; /* Arrange rows vertically */
+    border: 5px solid #333; /* A border around the entire board */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Subtle shadow */
+}
+
+.row {
+    display: flex; /* Make each row a flex container */
+}
+
+.square {
+    width: 60px;   /* Define the size of each square */
+    height: 60px;
+}
+
+/* Define the colors for the light squares */
+.square.light {
+    background-color: #f0d9b5; /* A common light wood/cream color for chess boards */
+}
+
+/* Define the colors for the dark squares */
+.square.dark {
+    background-color: #b58863; /* A common dark wood/brown color for chess boards */
+}
+
+/* Optional: Add some space around the board for aesthetics */
+.chessboard {
+    margin: 20px;
+}

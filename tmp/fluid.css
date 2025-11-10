@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.Parent{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.box1{
+    
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    width: 30%;
+}
+.box2{
+    
+    background-color:gold;
+    color: black;
+    padding: 10px;
+    width: 30%;
+}
+.box3{
+    
+    background-color:burlywood;
+    color: black;
+    padding: 10px;
+    width:30%;
+}

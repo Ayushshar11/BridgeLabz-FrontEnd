@@ -1,0 +1,46 @@
+.main {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.parent1 {
+    display: flex;
+}
+.parent2 {
+    display: flex;
+}
+
+.box1, .box2, .box3, .box4 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid rgb(220, 209, 209);
+    transition: all 1s ease-in;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main:hover .box1 {
+    background-color: aqua;
+    transform: translate(-100px, -100px) rotate(10.9deg);;
+    
+}
+.main:hover .box2 {
+    background-color: forestgreen;
+    transform: translate(100px, -100px);
+}
+.main:hover .box3 {
+    background-color: burlywood;
+    transform: translate(-100px, 100px);
+}
+.main:hover .box4 {
+    background-color: yellowgreen;
+    transform: translate(100px, 100px);
+}
