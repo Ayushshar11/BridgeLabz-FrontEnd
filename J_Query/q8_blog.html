@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q8 - Dynamic Blog Posts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 900px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 12px; margin:8px 0; border-radius:8px; }
+    .highlight { background: #fffae6; }
+    .selected { box-shadow: 0 0 0 3px rgba(0,128,0,0.12); }
+    .invalid { border:2px solid red !important; }
+    .manager { font-weight:700; cursor:pointer; }
+    .employee { cursor:default; padding-left:12px; }
+    .fav { cursor:pointer; user-select:none; }
+    .banner { padding:16px; background:#f0f8ff; margin:10px 0; }
+  </style>
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Q8 - Dynamic Blog Posts</h1>
+    
+<section class="card" id="blog-admin">
+  <div>
+    <button id="add-post">Add New Post</button>
+    <button id="prepend-post">Prepend Featured Post</button>
+    <button id="remove-last">Remove Last Post</button>
+  </div>
+  <ul id="posts">
+    <li class="post card">Post: Building with jQuery</li>
+    <li class="post card">Post: Understanding Events</li>
+    <li class="post card">Post: DOM Manipulation Tips</li>
+    <li class="post card">Post: Progressive Enhancement</li>
+    <li class="post card">Post: Accessibility Basics</li>
+  </ul>
+</section>
+
+    <hr/>
+    <p style="font-size:0.9em;color:#666">Admin operations on posts with add/prepend/remove and tags.</p>
+  </main>
+  <script src="q8_blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q4 - Special Offer Banner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 900px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 12px; margin:8px 0; border-radius:8px; }
+    .highlight { background: #fffae6; }
+    .selected { box-shadow: 0 0 0 3px rgba(0,128,0,0.12); }
+    .invalid { border:2px solid red !important; }
+    .manager { font-weight:700; cursor:pointer; }
+    .employee { cursor:default; padding-left:12px; }
+    .fav { cursor:pointer; user-select:none; }
+    .banner { padding:16px; background:#f0f8ff; margin:10px 0; }
+  </style>
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Q4 - Special Offer Banner</h1>
+    
+<section class="card" id="banners">
+  <div class="banner" data-banner="1">Special Offer: Buy 1 Get 1 Free</div>
+  <div class="banner" data-banner="2">Holiday Sale: Up to 50% off</div>
+  <div class="banner" data-banner="3">New Arrival: Summer Collection</div>
+  <div class="banner" data-banner="4">Members Only: Extra 10% coupon</div>
+  <div class="banner" data-banner="5">Limited Time: Free shipping</div>
+
+  <div style="margin-top:12px;">
+    <button id="hide-banner">Hide</button>
+    <button id="show-banner">Show</button>
+    <button id="slide-up">Slide Up</button>
+    <button id="slide-down">Slide Down</button>
+    <button id="fade-in">Fade In</button>
+    <button id="fade-out">Fade Out</button>
+  </div>
+</section>
+
+    <hr/>
+    <p style="font-size:0.9em;color:#666">Banners with show/hide, slide, fade and auto-rotate.</p>
+  </main>
+  <script src="q4_banners.js"></script>
+</body>
+</html>

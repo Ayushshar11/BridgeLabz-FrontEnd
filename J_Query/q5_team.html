@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q5 - Team Members Directory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 900px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 12px; margin:8px 0; border-radius:8px; }
+    .highlight { background: #fffae6; }
+    .selected { box-shadow: 0 0 0 3px rgba(0,128,0,0.12); }
+    .invalid { border:2px solid red !important; }
+    .manager { font-weight:700; cursor:pointer; }
+    .employee { cursor:default; padding-left:12px; }
+    .fav { cursor:pointer; user-select:none; }
+    .banner { padding:16px; background:#f0f8ff; margin:10px 0; }
+  </style>
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Q5 - Team Members Directory</h1>
+    
+<section class="card" id="team">
+  <div class="department card" id="dept-dev">
+    <h2 class="manager">Dev Manager</h2>
+    <div class="member employee" data-email="dev1@example.com">Dev A</div>
+    <div class="member employee" data-email="dev2@example.com">Dev B</div>
+    <div class="member employee" data-email="dev3@example.com">Dev C</div>
+  </div>
+
+  <div class="department card" id="dept-design">
+    <h2 class="manager">Design Manager</h2>
+    <div class="member employee" data-email="des1@example.com">Designer A</div>
+    <div class="member employee" data-email="des2@example.com">Designer B</div>
+    <div class="member employee" data-email="des3@example.com">Designer C</div>
+  </div>
+
+  <div style="margin-top:10px;">
+    <button id="random-emp">Select Random Employee</button>
+    <button id="toggle-team">Collapse/Expand Teams</button>
+  </div>
+</section>
+
+    <hr/>
+    <p style="font-size:0.9em;color:#666">Department/manager interactions and team operations.</p>
+  </main>
+  <script src="q5_team.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q2 - Product Highlight</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 900px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 12px; margin:8px 0; border-radius:8px; }
+    .highlight { background: #fffae6; }
+    .selected { box-shadow: 0 0 0 3px rgba(0,128,0,0.12); }
+    .invalid { border:2px solid red !important; }
+    .manager { font-weight:700; cursor:pointer; }
+    .employee { cursor:default; padding-left:12px; }
+    .fav { cursor:pointer; user-select:none; }
+    .banner { padding:16px; background:#f0f8ff; margin:10px 0; }
+  </style>
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Q2 - Product Highlight</h1>
+    
+<section class="card" id="products">
+  <ul id="product-list">
+    <li class="product card" data-stock="in" data-discount="20">
+      <h3 class="prod-title">Wireless Headphones <span class="fav">♡</span></h3>
+      <p class="short">Compact, long battery</p>
+      <p class="extra" style="display:none;">Extra: ANC, Bluetooth 5.2, 30h playtime</p>
+      <p class="price">₹2,499</p>
+    </li>
+    <li class="product card" data-stock="out" data-discount="0">
+      <h3 class="prod-title">Smart Speaker <span class="fav">♡</span></h3>
+      <p class="short">Voice assistant built-in</p>
+      <p class="extra" style="display:none;">Extra: Multiroom support, 4-inch driver</p>
+      <p class="price">₹3,199</p>
+    </li>
+    <li class="product card" data-stock="in" data-discount="15">
+      <h3 class="prod-title">Fitness Band <span class="fav">♡</span></h3>
+      <p class="short">Heart-rate & SpO2</p>
+      <p class="extra" style="display:none;">Extra: Sleep tracking, 7-day battery</p>
+      <p class="price">₹1,199</p>
+    </li>
+    <li class="product card" data-stock="in" data-discount="0">
+      <h3 class="prod-title">USB-C Charger <span class="fav">♡</span></h3>
+      <p class="short">Fast charge 30W</p>
+      <p class="extra" style="display:none;">Extra: Compact, foldable plug</p>
+      <p class="price">₹699</p>
+    </li>
+    <li class="product card" data-stock="in" data-discount="50">
+      <h3 class="prod-title">Gaming Mouse <span class="fav">♡</span></h3>
+      <p class="short">Programmable buttons</p>
+      <p class="extra" style="display:none;">Extra: 16000 DPI, RGB</p>
+      <p class="price">₹1,799</p>
+    </li>
+  </ul>
+</section>
+
+    <hr/>
+    <p style="font-size:0.9em;color:#666">Product interactions: hover, favorite, discounts, out-of-stock alert.</p>
+  </main>
+  <script src="q2_product.js"></script>
+</body>
+</html>

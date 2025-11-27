@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q3 - Interactive FAQ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 900px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 12px; margin:8px 0; border-radius:8px; }
+    .highlight { background: #fffae6; }
+    .selected { box-shadow: 0 0 0 3px rgba(0,128,0,0.12); }
+    .invalid { border:2px solid red !important; }
+    .manager { font-weight:700; cursor:pointer; }
+    .employee { cursor:default; padding-left:12px; }
+    .fav { cursor:pointer; user-select:none; }
+    .banner { padding:16px; background:#f0f8ff; margin:10px 0; }
+  </style>
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Q3 - Interactive FAQ</h1>
+    
+<section class="card" id="faq">
+  <dl>
+    <dt class="question card">What is your refund policy?</dt>
+    <dd class="answer" style="display:none">We offer a 30-day refund with receipt.</dd>
+
+    <dt class="question card">How long is shipping?</dt>
+    <dd class="answer" style="display:none">Standard: 5-7 business days.</dd>
+
+    <dt class="question card">Do you provide bulk discounts?</dt>
+    <dd class="answer" style="display:none">Yes — contact sales for tiered pricing.</dd>
+
+    <dt class="question card">Can I change my order?</dt>
+    <dd class="answer" style="display:none">Orders can be changed within 2 hours of placement.</dd>
+
+    <dt class="question card">How to contact support?</dt>
+    <dd class="answer" style="display:none">
+      <form id="support-form">
+        <input type="text" id="support-input" placeholder="Type your question" />
+      </form>
+    </dd>
+  </dl>
+</section>
+
+    <hr/>
+    <p style="font-size:0.9em;color:#666">Interactive FAQ with form input focus behavior.</p>
+  </main>
+  <script src="q3_faq.js"></script>
+</body>
+</html>
