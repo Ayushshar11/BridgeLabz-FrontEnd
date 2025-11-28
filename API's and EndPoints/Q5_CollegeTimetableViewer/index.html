@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Q5 - Timetable Viewer</title></head>
+<body>
+  <h2>Timetable</h2>
+  <select id="day">
+    <option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option>
+  </select>
+  <div id="result"></div>
+
+<script>
+function load(day){
+  fetch('http://localhost:3005/timetable?day=' + encodeURIComponent(day))
+    .then(r=>r.json())
+    .then(data=>{
+      var out = data.length ? data.map(s=>`<div><strong>${s.subject}</strong> — ${s.faculty} <small>(${s.time})</small></div>`).join('') : '<div>No classes today.</div>';
+      document.getElementById('result').innerHTML = out;
+    }).catch(()=>{ document.getElementById('result').textContent='Error loading timetable'; });
+}
+
+document.getElementById('day').addEventListener('change', function(){ load(this.value); });
+load(document.getElementById('day').value);
+</script>
+</body>
+</html>

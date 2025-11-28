@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Q4 - Multi-API Dashboard</title></head>
+<body>
+  <h2>Dashboard</h2>
+  <div id="status"></div>
+  <div id="totals">
+    <div>Total Users: <span id="users">--</span></div>
+    <div>Total Orders: <span id="orders">--</span></div>
+    <div>Total Products: <span id="products">--</span></div>
+  </div>
+
+<script>
+document.getElementById('status').textContent = 'Loading...';
+Promise.all([
+  fetch('http://localhost:3004/users').then(r=>r.ok? r.json() : Promise.reject('users')),
+  fetch('http://localhost:3004/orders').then(r=>r.ok? r.json() : Promise.reject('orders')),
+  fetch('http://localhost:3004/products').then(r=>r.ok? r.json() : Promise.reject('products'))
+]).then(([users, orders, products])=>{
+  document.getElementById('users').textContent = users.length;
+  document.getElementById('orders').textContent = orders.length;
+  document.getElementById('products').textContent = products.length;
+  document.getElementById('status').textContent = 'All data loaded.';
+}).catch(err=>{
+  // try to still fetch individually to show whatever is available
+  document.getElementById('status').textContent = 'Some data could not be loaded.';
+  fetch('http://localhost:3004/users').then(r=>r.json()).then(d=>document.getElementById('users').textContent=d.length).catch(()=>{});
+  fetch('http://localhost:3004/orders').then(r=>r.json()).then(d=>document.getElementById('orders').textContent=d.length).catch(()=>{});
+  fetch('http://localhost:3004/products').then(r=>r.json()).then(d=>document.getElementById('products').textContent=d.length).catch(()=>{});
+});
+</script>
+</body>
+</html>

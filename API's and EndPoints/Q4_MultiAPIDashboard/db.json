@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Asha"
+    },
+    {
+      "id": 2,
+      "name": "Vikram"
+    },
+    {
+      "id": 3,
+      "name": "Sonal"
+    },
+    {
+      "id": 4,
+      "name": "Kabir"
+    },
+    {
+      "id": 5,
+      "name": "Leena"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "total": 120.5
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "total": 49.0
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "total": 210.0
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "total": 15.25
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "total": 320.0
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Widget A",
+      "price": 10.0
+    },
+    {
+      "id": 2,
+      "name": "Widget B",
+      "price": 15.5
+    },
+    {
+      "id": 3,
+      "name": "Gadget X",
+      "price": 99.99
+    },
+    {
+      "id": 4,
+      "name": "Gadget Y",
+      "price": 199.99
+    },
+    {
+      "id": 5,
+      "name": "Accessory Z",
+      "price": 4.99
+    }
+  ]
+}
